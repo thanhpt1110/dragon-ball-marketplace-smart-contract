@@ -9,11 +9,11 @@ import "hardhat/console.sol";
 // This is the main building block for smart contracts.
 contract Token {
     // Some string type variables to identify the token.
-    string public name = "My Hardhat Token";
-    string public symbol = "MHT";
+    string public name = "Tuan Thanh Token";
+    string public symbol = "TTT";
 
     // The fixed amount of tokens, stored in an unsigned integer type variable.
-    uint256 public totalSupply = 1000000;
+    uint256 public totalSupply = 500*10**18;
 
     // An address type variable is used to store ethereum accounts.
     address public owner;
