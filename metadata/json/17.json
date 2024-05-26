@@ -1,0 +1,20 @@
+{
+    "name": "Vegeta",
+    "description": "Vegeta is a Saiyan prince and a major character in the Dragon Ball series, known for his pride and determination.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/17.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "8000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "7000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Galick Gun"
+        }
+    ],
+    "rarity": "S"
+}

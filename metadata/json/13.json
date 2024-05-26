@@ -1,0 +1,20 @@
+{
+    "name": "Gogeta",
+    "description": "Gogeta is the result of the fusion between Goku and Vegeta using the Fusion Dance.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/13.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "18000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "15000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Big Bang Kamehameha"
+        }
+    ],
+    "rarity": "SS"
+}

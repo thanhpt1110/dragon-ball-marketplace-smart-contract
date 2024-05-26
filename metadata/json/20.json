@@ -1,0 +1,20 @@
+{
+    "name": "Krillin",
+    "description": "Krillin is a loyal companion and friend of Goku in the Dragon Ball series, known for his courage despite not being as powerful as the Saiyans.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/20.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "3000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "2500"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Destructo Disk"
+        }
+    ],
+    "rarity": "B"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Cell",
+    "description": "Cell is a major villain in the Dragon Ball series, who evolves through several forms by absorbing other beings.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/11.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "9000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "8000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "S"
+}

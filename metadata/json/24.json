@@ -1,0 +1,20 @@
+{
+    "name": "Pan",
+    "description": "Pan is a character in the Dragon Ball series, known for her adventurous spirit. She is the granddaughter of Goku.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/24.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "3500"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "3000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "B"
+}

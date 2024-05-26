@@ -1,0 +1,20 @@
+{
+    "name": "Videl",
+    "description": "Videl is a key character in the Dragon Ball series, known for her bravery and determination. She is the daughter of Mr. Satan and the wife of Gohan.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/22.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "2000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "1500"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "None"
+        }
+    ],
+    "rarity": "C"
+}

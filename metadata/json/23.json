@@ -1,0 +1,20 @@
+{
+    "name": "Android 18",
+    "description": "Android 18 is a character in the Dragon Ball series, known for her strength and calm demeanor. She is an android created by Dr. Gero.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/23.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "7000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "6000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Energy Attack"
+        }
+    ],
+    "rarity": "A"
+}

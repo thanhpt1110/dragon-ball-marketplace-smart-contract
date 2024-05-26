@@ -1,0 +1,20 @@
+{
+    "name": "Future Trunks",
+    "description": "Future Trunks is a version of Trunks from a dystopian future, who travels back in time to warn the Z fighters about the androids.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/8.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "9000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "8000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Burning Attack"
+        }
+    ],
+    "rarity": "S"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan 5 Goku",
+    "description": "Super Saiyan 5 Goku is a hypothetical transformation of Goku that surpasses Super Saiyan 4.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/10.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "25000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "20000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Ultra Kamehameha"
+        }
+    ],
+    "rarity": "SSS"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan 4 Gogeta",
+    "description": "Super Saiyan 4 Gogeta is the result of the fusion between Goku and Vegeta in their Super Saiyan 4 forms.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/21.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "28000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "23000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Big Bang Kamehameha"
+        }
+    ],
+    "rarity": "SSS"
+}

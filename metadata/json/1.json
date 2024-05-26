@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan 4 Goku",
+    "description": "Super Saiyan 4 Goku is a Saiyan transformation which first appeared in Dragon Ball GT. The form is a different branch of transformation from the earlier Super Saiyan forms, such as Super Saiyan, Super Saiyan 2 and Super Saiyan 3.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/1.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "15000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "8000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "10x Kamehameha"
+        }
+    ],
+    "rarity": "SS"
+}

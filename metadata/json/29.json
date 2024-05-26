@@ -1,0 +1,20 @@
+{
+    "name": "Xeno Goku",
+    "description": "Xeno Goku is a character from the Dragon Ball Heroes series, known for his unique outfit and the use of a Power Pole.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/29.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "21000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "17000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "SS"
+}

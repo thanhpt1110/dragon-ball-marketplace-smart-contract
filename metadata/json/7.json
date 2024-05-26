@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan Kid Goku",
+    "description": "Super Saiyan Kid Goku is a transformation of Goku when he was a child.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/7.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "1500"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "1200"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "A"
+}

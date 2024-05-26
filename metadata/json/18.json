@@ -1,0 +1,20 @@
+{
+    "name": "Gotenks",
+    "description": "Gotenks is the result of the fusion between Goten and Trunks using the Fusion Dance.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/18.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "13000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "11000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Super Ghost Kamikaze Attack"
+        }
+    ],
+    "rarity": "S"
+}

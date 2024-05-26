@@ -1,0 +1,20 @@
+{
+    "name": "Baby Vegeta",
+    "description": "Baby Vegeta is a character in the Dragon Ball series, known for his power and ruthlessness. He is the result of the Tuffle parasite, Baby, taking over Vegeta's body.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/26.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "16000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "14000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Revenge Death Ball"
+        }
+    ],
+    "rarity": "SS"
+}

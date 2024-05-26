@@ -1,0 +1,20 @@
+{
+    "name": "Frieza",
+    "description": "Frieza is a major villain in the Dragon Ball series, known for his ruthlessness and power.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/15.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "8500"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "7000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Death Beam"
+        }
+    ],
+    "rarity": "S"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Goku Black",
+    "description": "Goku Black is a major villain in the Dragon Ball series, known for his power and ruthlessness. He is the result of Zamasu taking over Goku's body.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/25.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "15000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "13000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Black Kamehameha"
+        }
+    ],
+    "rarity": "SS"
+}

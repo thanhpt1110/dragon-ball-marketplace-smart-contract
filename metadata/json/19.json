@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan Blue Goku II",
+    "description": "Another representation of Goku in his Super Saiyan Blue form, combining the power of Super Saiyan God with the first Super Saiyan form.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/19.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "22000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "18000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "SS"
+}

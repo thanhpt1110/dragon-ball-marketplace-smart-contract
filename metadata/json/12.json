@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan Future Trunks",
+    "description": "Super Saiyan Future Trunks is a transformation of Future Trunks, who uses this power to fight against the threats to his dystopian future.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/12.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "11000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "9000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Burning Attack"
+        }
+    ],
+    "rarity": "S"
+}

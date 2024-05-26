@@ -1,0 +1,20 @@
+{
+    "name": "Cell Jr.",
+    "description": "Cell Jr. is a character in the Dragon Ball series, known for their speed and agility. They are the offspring of Cell.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/27.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "6000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "5000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "B"
+}

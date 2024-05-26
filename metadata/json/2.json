@@ -1,0 +1,20 @@
+{
+    "name": "Kid Goku",
+    "description": "Kid Goku is the young version of Goku, who lands on Earth as a child and grows up to become a formidable warrior.",
+    "image": "https://peach-used-gerbil-403.mypinata.cloud/ipfs/QmbicJ9r6rh9nJ8Sip1nvNcqqatH7CGZegTreYbXomrP2h/2.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "500"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "700"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "B"
+}
