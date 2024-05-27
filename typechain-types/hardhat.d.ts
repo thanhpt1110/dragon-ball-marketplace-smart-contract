@@ -82,6 +82,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IDragonBall__factory>;
     getContractFactory(
+      name: "DragonBallMarketplace",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.DragonBallMarketplace__factory>;
+    getContractFactory(
       name: "Token",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Token__factory>;
@@ -172,6 +176,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IDragonBall>;
     getContractAt(
+      name: "DragonBallMarketplace",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.DragonBallMarketplace>;
+    getContractAt(
       name: "Token",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -246,6 +255,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IDragonBall>;
     deployContract(
+      name: "DragonBallMarketplace",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.DragonBallMarketplace>;
+    deployContract(
       name: "Token",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Token>;
@@ -335,6 +348,11 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IDragonBall>;
+    deployContract(
+      name: "DragonBallMarketplace",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.DragonBallMarketplace>;
     deployContract(
       name: "Token",
       args: any[],

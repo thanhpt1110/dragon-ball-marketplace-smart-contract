@@ -3,4 +3,5 @@
 /* eslint-disable */
 import type * as dragonBallSol from "./DragonBall.sol";
 export type { dragonBallSol };
+export type { DragonBallMarketplace } from "./DragonBallMarketplace";
 export type { Token } from "./Token";

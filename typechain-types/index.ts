@@ -40,5 +40,7 @@ export type { DragonBall } from "./contracts/DragonBall.sol/DragonBall";
 export { DragonBall__factory } from "./factories/contracts/DragonBall.sol/DragonBall__factory";
 export type { IDragonBall } from "./contracts/DragonBall.sol/IDragonBall";
 export { IDragonBall__factory } from "./factories/contracts/DragonBall.sol/IDragonBall__factory";
+export type { DragonBallMarketplace } from "./contracts/DragonBallMarketplace";
+export { DragonBallMarketplace__factory } from "./factories/contracts/DragonBallMarketplace__factory";
 export type { Token } from "./contracts/Token";
 export { Token__factory } from "./factories/contracts/Token__factory";
