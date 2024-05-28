@@ -90,7 +90,10 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
 
         // Transfer FTM tax to the owner of the contract
         payable(owner()).transfer(fee);
-          
+        
+        // Update new authoer
+        listDetail[_tokenId].author = payable(msg.sender);
+        
         nft.safeTransferFrom(address(this), msg.sender, _tokenId);
         emit BuyNFT(msg.sender, _tokenId, price);
     }
