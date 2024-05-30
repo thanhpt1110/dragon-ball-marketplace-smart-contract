@@ -20,7 +20,7 @@ contract DragonBall is ERC721Enumerable, Ownable, AccessControlEnumerable, IDrag
 
     event Mint(address to, uint256 tokenid);
 
-    constructor() ERC721("DragonBall Card", "DragonBall") {
+    constructor() ERC721("Dragon Ball Card", "DragonBall") {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
     }
 

@@ -53,11 +53,13 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
 
     function listNft(uint256 _tokenId, uint256 _price) public {
         require(nft.ownerOf(_tokenId) == msg.sender, "You are not the owner of this NFT");
-        require(nft.isApprovedForAll(msg.sender, address(this)), "Marketplace is not approved to transfer this NFT");
+        require(nft.getApproved(_tokenId) == address(this), "Marketplace is not approved to transfer this NFT");
 
         listDetail[_tokenId] = ListDetail(payable(msg.sender), _price, _tokenId);
 
         nft.safeTransferFrom(msg.sender, address(this), _tokenId);
+        // Approve marketplace to transfer this NFT  
+        nft.approve(address(this), _tokenId);
         emit ListNFT(msg.sender, _tokenId, _price);
     }
 
@@ -74,12 +76,15 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
         require(listDetail[_tokenId].author == msg.sender, "Only owner can unlist this NFT");
 
         nft.safeTransferFrom(address(this), msg.sender, _tokenId);
+        // Approve marketplace to transfer this NFT  
+        nft.approve(address(this), _tokenId);
         emit UnListNFT(msg.sender, _tokenId);
     }
 
     function buyNft(uint256 _tokenId) public payable {
         require(msg.value >= listDetail[_tokenId].price, "Insufficient FTM sent");
         require(nft.ownerOf(_tokenId) == address(this), "This NFT doesn't exist on marketplace");
+        require(listDetail[_tokenId].author != msg.sender, "Owner cannot buy their own NFT");
         
         uint256 price = listDetail[_tokenId].price;
         uint256 fee = price * tax / 100;
@@ -98,6 +103,8 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
         listDetail[_tokenId].author = payable(msg.sender);
         
         nft.safeTransferFrom(address(this), msg.sender, _tokenId);
+        // Approve marketplace to transfer this NFT  
+        nft.approve(address(this), _tokenId);
         emit BuyNFT(msg.sender, oldAuthor, _tokenId, price);
     }
 
