@@ -14,9 +14,9 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
     }
 
     event ListNFT(address indexed _from, uint256 _tokenId, uint256 _price);
-    event UnlistNFT(address indexed _from, uint256 _tokenId);
-    event BuyNFT(address indexed _from, uint256 _tokenId, uint256 _price);
-    event UpdateListingNFTPrice(uint256 _tokenId, uint256 _price);
+    event UnListNFT(address indexed _from, uint256 _tokenId);
+    event BuyNFT(address indexed _from, address indexed _oldAuthor, uint256 _tokenId, uint256 _price);
+    event UpdateListingNFTPrice(address indexed _from, uint256 _tokenId, uint256 _price);
     event SetTax(uint256 _tax);
     event SetNFT(IERC721Enumerable _nft);
 
@@ -53,7 +53,7 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
 
     function listNft(uint256 _tokenId, uint256 _price) public {
         require(nft.ownerOf(_tokenId) == msg.sender, "You are not the owner of this NFT");
-        require(nft.getApproved(_tokenId) == address(this), "Marketplace is not approved to transfer this NFT");
+        require(nft.isApprovedForAll(msg.sender, address(this)), "Marketplace is not approved to transfer this NFT");
 
         listDetail[_tokenId] = ListDetail(payable(msg.sender), _price, _tokenId);
 
@@ -66,7 +66,7 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
         require(listDetail[_tokenId].author == msg.sender, "Only owner can update price of this NFT");
 
         listDetail[_tokenId].price = _price;
-        emit UpdateListingNFTPrice(_tokenId, _price);
+        emit UpdateListingNFTPrice(msg.sender, _tokenId, _price);
     }
 
     function unlistNft(uint256 _tokenId) public {
@@ -74,7 +74,7 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
         require(listDetail[_tokenId].author == msg.sender, "Only owner can unlist this NFT");
 
         nft.safeTransferFrom(address(this), msg.sender, _tokenId);
-        emit UnlistNFT(msg.sender, _tokenId);
+        emit UnListNFT(msg.sender, _tokenId);
     }
 
     function buyNft(uint256 _tokenId) public payable {
@@ -91,11 +91,14 @@ contract DragonBallMarketplace is IERC721Receiver, Ownable {
         // Transfer FTM tax to the owner of the contract
         payable(owner()).transfer(fee);
         
-        // Update new authoer
+        // Get old author before transfer
+        address payable oldAuthor = listDetail[_tokenId].author;
+
+        // Update new author
         listDetail[_tokenId].author = payable(msg.sender);
         
         nft.safeTransferFrom(address(this), msg.sender, _tokenId);
-        emit BuyNFT(msg.sender, _tokenId, price);
+        emit BuyNFT(msg.sender, oldAuthor, _tokenId, price);
     }
 
     // withdraw FTM

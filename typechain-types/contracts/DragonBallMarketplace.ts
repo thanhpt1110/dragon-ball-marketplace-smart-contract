@@ -61,7 +61,7 @@ export interface DragonBallMarketplaceInterface extends Interface {
       | "OwnershipTransferred"
       | "SetNFT"
       | "SetTax"
-      | "UnlistNFT"
+      | "UnListNFT"
       | "UpdateListingNFTPrice"
   ): EventFragment;
 
@@ -137,12 +137,19 @@ export interface DragonBallMarketplaceInterface extends Interface {
 export namespace BuyNFTEvent {
   export type InputTuple = [
     _from: AddressLike,
+    _oldAuthor: AddressLike,
     _tokenId: BigNumberish,
     _price: BigNumberish
   ];
-  export type OutputTuple = [_from: string, _tokenId: bigint, _price: bigint];
+  export type OutputTuple = [
+    _from: string,
+    _oldAuthor: string,
+    _tokenId: bigint,
+    _price: bigint
+  ];
   export interface OutputObject {
     _from: string;
+    _oldAuthor: string;
     _tokenId: bigint;
     _price: bigint;
   }
@@ -207,7 +214,7 @@ export namespace SetTaxEvent {
   export type LogDescription = TypedLogDescription<Event>;
 }
 
-export namespace UnlistNFTEvent {
+export namespace UnListNFTEvent {
   export type InputTuple = [_from: AddressLike, _tokenId: BigNumberish];
   export type OutputTuple = [_from: string, _tokenId: bigint];
   export interface OutputObject {
@@ -221,9 +228,14 @@ export namespace UnlistNFTEvent {
 }
 
 export namespace UpdateListingNFTPriceEvent {
-  export type InputTuple = [_tokenId: BigNumberish, _price: BigNumberish];
-  export type OutputTuple = [_tokenId: bigint, _price: bigint];
+  export type InputTuple = [
+    _from: AddressLike,
+    _tokenId: BigNumberish,
+    _price: BigNumberish
+  ];
+  export type OutputTuple = [_from: string, _tokenId: bigint, _price: bigint];
   export interface OutputObject {
+    _from: string;
     _tokenId: bigint;
     _price: bigint;
   }
@@ -417,11 +429,11 @@ export interface DragonBallMarketplace extends BaseContract {
     SetTaxEvent.OutputObject
   >;
   getEvent(
-    key: "UnlistNFT"
+    key: "UnListNFT"
   ): TypedContractEvent<
-    UnlistNFTEvent.InputTuple,
-    UnlistNFTEvent.OutputTuple,
-    UnlistNFTEvent.OutputObject
+    UnListNFTEvent.InputTuple,
+    UnListNFTEvent.OutputTuple,
+    UnListNFTEvent.OutputObject
   >;
   getEvent(
     key: "UpdateListingNFTPrice"
@@ -432,7 +444,7 @@ export interface DragonBallMarketplace extends BaseContract {
   >;
 
   filters: {
-    "BuyNFT(address,uint256,uint256)": TypedContractEvent<
+    "BuyNFT(address,address,uint256,uint256)": TypedContractEvent<
       BuyNFTEvent.InputTuple,
       BuyNFTEvent.OutputTuple,
       BuyNFTEvent.OutputObject
@@ -487,18 +499,18 @@ export interface DragonBallMarketplace extends BaseContract {
       SetTaxEvent.OutputObject
     >;
 
-    "UnlistNFT(address,uint256)": TypedContractEvent<
-      UnlistNFTEvent.InputTuple,
-      UnlistNFTEvent.OutputTuple,
-      UnlistNFTEvent.OutputObject
+    "UnListNFT(address,uint256)": TypedContractEvent<
+      UnListNFTEvent.InputTuple,
+      UnListNFTEvent.OutputTuple,
+      UnListNFTEvent.OutputObject
     >;
-    UnlistNFT: TypedContractEvent<
-      UnlistNFTEvent.InputTuple,
-      UnlistNFTEvent.OutputTuple,
-      UnlistNFTEvent.OutputObject
+    UnListNFT: TypedContractEvent<
+      UnListNFTEvent.InputTuple,
+      UnListNFTEvent.OutputTuple,
+      UnListNFTEvent.OutputObject
     >;
 
-    "UpdateListingNFTPrice(uint256,uint256)": TypedContractEvent<
+    "UpdateListingNFTPrice(address,uint256,uint256)": TypedContractEvent<
       UpdateListingNFTPriceEvent.InputTuple,
       UpdateListingNFTPriceEvent.OutputTuple,
       UpdateListingNFTPriceEvent.OutputObject
