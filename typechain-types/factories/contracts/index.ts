@@ -2,6 +2,6 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as dragonBallSol from "./DragonBall.sol";
+export { DragonBallAuction__factory } from "./DragonBallAuction__factory";
 export { DragonBallMarketplace__factory } from "./DragonBallMarketplace__factory";
-export { TestMarketplace__factory } from "./TestMarketplace__factory";
 export { Token__factory } from "./Token__factory";

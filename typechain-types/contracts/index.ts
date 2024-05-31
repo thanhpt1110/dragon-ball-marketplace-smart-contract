@@ -3,6 +3,6 @@
 /* eslint-disable */
 import type * as dragonBallSol from "./DragonBall.sol";
 export type { dragonBallSol };
+export type { DragonBallAuction } from "./DragonBallAuction";
 export type { DragonBallMarketplace } from "./DragonBallMarketplace";
-export type { TestMarketplace } from "./TestMarketplace";
 export type { Token } from "./Token";
