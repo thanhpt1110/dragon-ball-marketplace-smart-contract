@@ -13,6 +13,7 @@ contract DragonBallAuction is IERC721Receiver, Ownable {
 
     event CreateAuction(
         address indexed _from,
+        uint256 _auctionId,
         uint256 _tokenId,
         uint256 _initialPrice,
         uint256 _startTime,
@@ -111,6 +112,7 @@ contract DragonBallAuction is IERC721Receiver, Ownable {
         auction.push(_auction);
         emit CreateAuction(
             msg.sender,
+            _auction.auctionId,
             _tokenId,
             _initialPrice,
             _startTime,

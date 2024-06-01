@@ -212,6 +212,7 @@ export namespace CancelAuctionEvent {
 export namespace CreateAuctionEvent {
   export type InputTuple = [
     _from: AddressLike,
+    _auctionId: BigNumberish,
     _tokenId: BigNumberish,
     _initialPrice: BigNumberish,
     _startTime: BigNumberish,
@@ -219,6 +220,7 @@ export namespace CreateAuctionEvent {
   ];
   export type OutputTuple = [
     _from: string,
+    _auctionId: bigint,
     _tokenId: bigint,
     _initialPrice: bigint,
     _startTime: bigint,
@@ -226,6 +228,7 @@ export namespace CreateAuctionEvent {
   ];
   export interface OutputObject {
     _from: string;
+    _auctionId: bigint;
     _tokenId: bigint;
     _initialPrice: bigint;
     _startTime: bigint;
@@ -520,7 +523,7 @@ export interface DragonBallAuction extends BaseContract {
       CancelAuctionEvent.OutputObject
     >;
 
-    "CreateAuction(address,uint256,uint256,uint256,uint256)": TypedContractEvent<
+    "CreateAuction(address,uint256,uint256,uint256,uint256,uint256)": TypedContractEvent<
       CreateAuctionEvent.InputTuple,
       CreateAuctionEvent.OutputTuple,
       CreateAuctionEvent.OutputObject
