@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan 3 Goku (Dead)",
+    "description": "This is Goku in his Super Saiyan 3 form after his death, continuing to fight for the safety of the universe.",
+    "image": "https://crimson-passive-nightingale-934.mypinata.cloud/ipfs/QmaKMyogn6VQUe9rWa1xtAsnvNvDJP5B6ybHKxDpezrw1r/4.png",           
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "12000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "7000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Super Kamehameha"
+        }
+    ],
+    "rarity": "S"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan 3 Goku",
+    "description": "Super Saiyan 3 Goku is a powerful transformation that Goku achieves in his fight against Majin Buu.",
+    "image": "https://crimson-passive-nightingale-934.mypinata.cloud/ipfs/QmaKMyogn6VQUe9rWa1xtAsnvNvDJP5B6ybHKxDpezrw1r/9.png",    
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "12000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "7000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Super Kamehameha"
+        }
+    ],
+    "rarity": "S"
+}

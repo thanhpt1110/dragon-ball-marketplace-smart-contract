@@ -1,0 +1,20 @@
+{
+    "name": "Ultra Instinct Goku",
+    "description": "Ultra Instinct Goku is a transformation of Goku where he achieves a state of mind and body that operates independently of his thoughts and emotions.",
+    "image": "https://crimson-passive-nightingale-934.mypinata.cloud/ipfs/QmaKMyogn6VQUe9rWa1xtAsnvNvDJP5B6ybHKxDpezrw1r/7.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "30000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "25000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Kamehameha"
+        }
+    ],
+    "rarity": "SSS"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Super Saiyan 2 Goku",
+    "description": "Super Saiyan 2 Goku is a powerful transformation that Goku achieves during his fight against Cell.",
+    "image": "https://crimson-passive-nightingale-934.mypinata.cloud/ipfs/QmaKMyogn6VQUe9rWa1xtAsnvNvDJP5B6ybHKxDpezrw1r/6.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "10000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "6000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Super Kamehameha"
+        }
+    ],
+    "rarity": "S"
+}

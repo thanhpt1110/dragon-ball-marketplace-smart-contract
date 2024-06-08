@@ -1,0 +1,20 @@
+{
+    "name": "Vegito Blue",
+    "description": "Vegito Blue is the result of the fusion between Goku and Vegeta using the Potara earrings, achieving the Super Saiyan Blue form.",
+    "image": "https://crimson-passive-nightingale-934.mypinata.cloud/ipfs/QmaKMyogn6VQUe9rWa1xtAsnvNvDJP5B6ybHKxDpezrw1r/5.png",
+    "attributes": [
+        {
+            "trait_type": "Power",
+            "value": "20000"
+        },
+        {
+            "trait_type": "Speed",
+            "value": "15000"
+        },
+        {
+            "trait_type": "Special Skill",
+            "value": "Final Kamehameha"
+        }
+    ],
+    "rarity": "SS"
+}
