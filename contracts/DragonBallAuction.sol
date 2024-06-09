@@ -170,7 +170,14 @@ contract DragonBallAuction is IERC721Receiver, Ownable {
             "Auction is already completed"
         );
         require(auction[_auctionId].active, "Auction is not active");
-
+        require(
+            auction[_auctionId].lastBidder != address(0),
+            "No bids were made in this auction"
+        );
+        require(
+            block.timestamp >= auction[_auctionId].endTime,
+            "Auction has not ended yet"
+        );
         // Transfer NFT to winner which is the last bidder
         nft.safeTransferFrom(
             address(this),
